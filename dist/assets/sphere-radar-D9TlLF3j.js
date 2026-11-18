@@ -1,0 +1,1 @@
+import{E as e,m as t,o as n}from"./runtime-core.esm-bundler-DkML_vOj.js";import{t as r}from"./ShaderGeometryDemo-5cGemgaV.js";var i=t({__name:`index`,setup(t){return(t,i)=>(e(),n(r,{kind:`sphere-radar`,title:`圆球雷达覆盖体`,description:`经纬参数网格在顶点着色器中形成完整球体，并显示环绕扫描带。`}))}});export{i as default};

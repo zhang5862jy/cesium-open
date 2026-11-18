@@ -1,0 +1,15 @@
+import type { RangeQuery, RecordKey, RecordsPageQuery } from "./types";
+export declare const DEFAULT_BATCH_SIZE = 2000;
+export declare const MAX_BATCH_SIZE = 5000;
+export declare const MAX_BATCH_BYTES: number;
+export declare const MAX_PENDING_BYTES: number;
+export declare const MAX_RESULT_BYTES: number;
+export declare const WRITE_FLUSH_MS = 50;
+export declare const DEFAULT_ADMIN_PAGE_SIZE = 50;
+export declare const MAX_ADMIN_PAGE_SIZE = 200;
+export declare function assertSceneId(sceneId: string): void;
+export declare function assertTimestamp(value: number, label?: string): void;
+export declare function assertProtocolId(protocolId: number): void;
+export declare function normalizeRangeQuery(query: RangeQuery): Required<Omit<RangeQuery, "cursor">> & Pick<RangeQuery, "cursor">;
+export declare function assertRecordKey(key: RecordKey): void;
+export declare function normalizeRecordsPageQuery(query: RecordsPageQuery): Required<Omit<RecordsPageQuery, "cursor" | "sceneId">> & Pick<RecordsPageQuery, "cursor" | "sceneId">;

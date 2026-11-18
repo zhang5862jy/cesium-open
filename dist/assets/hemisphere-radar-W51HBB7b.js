@@ -1,0 +1,1 @@
+import{E as e,m as t,o as n}from"./runtime-core.esm-bundler-DkML_vOj.js";import{t as r}from"./ShaderGeometryDemo-5cGemgaV.js";var i=t({__name:`index`,setup(t){return(t,i)=>(e(),n(r,{kind:`hemisphere-radar`,title:`半球雷达覆盖体`,description:`方位角与仰角参数网格在 GPU 中展开为半球探测空间。`}))}});export{i as default};

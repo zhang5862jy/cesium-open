@@ -1,0 +1,1 @@
+import{E as e,m as t,o as n}from"./runtime-core.esm-bundler-DkML_vOj.js";import{t as r}from"./ShaderGeometryDemo-5cGemgaV.js";var i=t({__name:`index`,setup(t){return(t,i)=>(e(),n(r,{kind:`cube`,title:`自定义立方体`,description:`归一化角点由顶点着色器映射为立方体，并叠加旋转与呼吸动画。`}))}});export{i as default};

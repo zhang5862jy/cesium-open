@@ -1,0 +1,1 @@
+import{E as e,m as t,o as n}from"./runtime-core.esm-bundler-DkML_vOj.js";import{t as r}from"./ShaderGeometryDemo-5cGemgaV.js";var i=t({__name:`index`,setup(t){return(t,i)=>(e(),n(r,{kind:`triangular-pyramid`,title:`自定义三棱锥`,description:`四个三角面共享参数化成形逻辑，可实时调整底面半径和高度。`}))}});export{i as default};

@@ -1,0 +1,1 @@
+import{E as e,m as t,o as n}from"./runtime-core.esm-bundler-DkML_vOj.js";import{t as r}from"./ShaderGeometryDemo-5cGemgaV.js";var i=t({__name:`index`,setup(t){return(t,i)=>(e(),n(r,{kind:`torus-knot`,title:`参数化环面结`,description:`顶点着色器根据 p/q 曲线与局部标架生成连续扫掠管面。`}))}});export{i as default};

@@ -1,0 +1,1 @@
+import{E as e,m as t,o as n}from"./runtime-core.esm-bundler-DkML_vOj.js";import{t as r}from"./ShaderGeometryDemo-5cGemgaV.js";var i=t({__name:`index`,setup(t){return(t,i)=>(e(),n(r,{kind:`phased-array-radar`,title:`相控阵雷达波束`,description:`由五个参数面组成可转向波束，支持方位、俯仰和角宽实时控制。`}))}});export{i as default};

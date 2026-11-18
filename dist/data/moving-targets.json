@@ -1,0 +1,5073 @@
+{
+  "schemaVersion": "1.0",
+  "scenario": {
+    "id": "china-mixed-moving-targets",
+    "name": "中国区域多类型动目标演示",
+    "description": "包含飞机、倾转旋翼机、消防车和地面单位的合成轨迹数据，仅用于 Cesium 性能和插值演示。",
+    "startTime": "2026-07-30T00:00:00.000Z",
+    "stopTime": "2026-07-30T00:01:00.000Z",
+    "loop": true,
+    "sampleIntervalSeconds": 20
+  },
+  "factions": [
+    {
+      "id": "blue",
+      "name": "蓝方",
+      "color": "#35a7ff"
+    },
+    {
+      "id": "red",
+      "name": "红方",
+      "color": "#ff4d62"
+    },
+    {
+      "id": "neutral",
+      "name": "中立",
+      "color": "#ffd166"
+    }
+  ],
+  "models": [
+    {
+      "type": "j20",
+      "name": "J-20",
+      "targetType": "fighter",
+      "url": "/model/lod/j20-lod.glb",
+      "forwardAxis": "X",
+      "upAxis": "Z",
+      "scale": 0.0035,
+      "minimumPixelSize": 24
+    },
+    {
+      "type": "v22",
+      "name": "V-22 Osprey",
+      "targetType": "tiltrotor",
+      "url": "/model/lod/v22-lod.glb",
+      "forwardAxis": "X",
+      "upAxis": "Z",
+      "scale": 0.1,
+      "minimumPixelSize": 24
+    },
+    {
+      "type": "fire-engine",
+      "name": "消防车",
+      "targetType": "ground-vehicle",
+      "url": "/model/lod/fire-engine-lod.glb",
+      "forwardAxis": "X",
+      "upAxis": "Z",
+      "scale": 3,
+      "minimumPixelSize": 22
+    },
+    {
+      "type": "elephant-man",
+      "name": "大象人",
+      "targetType": "ground-unit",
+      "url": "/model/lod/elephant-man-lod.glb",
+      "forwardAxis": "Z",
+      "upAxis": "Y",
+      "scale": 60,
+      "minimumPixelSize": 22
+    }
+  ],
+  "targets": [
+    {
+      "id": "TARGET-0001",
+      "name": "J-20-0001",
+      "modelType": "j20",
+      "targetType": "fighter",
+      "faction": "neutral",
+      "health": 66,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.69,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 100.615019,
+          "latitude": 42.340761,
+          "height": 15205.38,
+          "heading": 177.223,
+          "pitch": 0,
+          "roll": 14
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 100.651757,
+          "latitude": 42.041636,
+          "height": 15768.29,
+          "heading": 185.017,
+          "pitch": 3.464,
+          "roll": -7
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 100.623544,
+          "latitude": 41.706787,
+          "height": 14642.46,
+          "heading": 169.429,
+          "pitch": -3.464,
+          "roll": -7
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 100.660282,
+          "latitude": 41.407662,
+          "height": 15205.38,
+          "heading": 177.223,
+          "pitch": 0,
+          "roll": 14
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0002",
+      "name": "V-22 Osprey-0002",
+      "modelType": "v22",
+      "targetType": "tiltrotor",
+      "faction": "neutral",
+      "health": 94,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.66,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 105.966866,
+          "latitude": 33.828064,
+          "height": 3777.79,
+          "heading": 190.666,
+          "pitch": 0.052,
+          "roll": 13.999
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 105.946241,
+          "latitude": 33.615306,
+          "height": 4327.98,
+          "heading": 198.284,
+          "pitch": 3.438,
+          "roll": -7.157
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 105.861156,
+          "latitude": 33.367095,
+          "height": 3202.25,
+          "heading": 182.697,
+          "pitch": -3.49,
+          "roll": -6.842
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 105.841505,
+          "latitude": 33.154873,
+          "height": 3777.79,
+          "heading": 190.666,
+          "pitch": 0.052,
+          "roll": 13.999
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0003",
+      "name": "消防车-0003",
+      "modelType": "fire-engine",
+      "targetType": "ground-vehicle",
+      "faction": "neutral",
+      "health": 57,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.99,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 111.318069,
+          "latitude": 25.315011,
+          "height": 81.49,
+          "heading": 204.109,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 111.310046,
+          "latitude": 25.296602,
+          "height": 81.49,
+          "heading": 211.549,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 111.301511,
+          "latitude": 25.277912,
+          "height": 81.49,
+          "heading": 195.966,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 111.293504,
+          "latitude": 25.259511,
+          "height": 81.49,
+          "heading": 204.109,
+          "pitch": 0,
+          "roll": 0
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0004",
+      "name": "大象人-0004",
+      "modelType": "elephant-man",
+      "targetType": "ground-unit",
+      "faction": "neutral",
+      "health": 85,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.96,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 116.669593,
+          "latitude": 43.802136,
+          "height": 48.69,
+          "heading": 217.551,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 116.667873,
+          "latitude": 43.799746,
+          "height": 48.69,
+          "heading": 224.813,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 116.665645,
+          "latitude": 43.797076,
+          "height": 48.69,
+          "heading": 209.237,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 116.663948,
+          "latitude": 43.794699,
+          "height": 48.69,
+          "heading": 217.551,
+          "pitch": 0,
+          "roll": 0
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0005",
+      "name": "消防车-0005",
+      "modelType": "fire-engine",
+      "targetType": "ground-vehicle",
+      "faction": "neutral",
+      "health": 48,
+      "maxHealth": 100,
+      "status": "damaged",
+      "showModel": false,
+      "speedLevel": 0.93,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 122.021118,
+          "latitude": 35.289261,
+          "height": 145.9,
+          "heading": 230.994,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 122.002061,
+          "latitude": 35.273523,
+          "height": 145.9,
+          "heading": 238.076,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 121.9825,
+          "latitude": 35.257508,
+          "height": 145.9,
+          "heading": 222.509,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 121.963474,
+          "latitude": 35.241787,
+          "height": 145.9,
+          "heading": 230.994,
+          "pitch": 0,
+          "roll": 0
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0006",
+      "name": "J-20-0006",
+      "modelType": "j20",
+      "targetType": "fighter",
+      "faction": "neutral",
+      "health": 76,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.9,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 127.374254,
+          "latitude": 26.777271,
+          "height": 13156.03,
+          "heading": 244.437,
+          "pitch": 0.26,
+          "roll": 13.97
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 127.030362,
+          "latitude": 26.609578,
+          "height": 13654.43,
+          "heading": 251.338,
+          "pitch": 3.327,
+          "roll": -7.773
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 126.624092,
+          "latitude": 26.407576,
+          "height": 12530.97,
+          "heading": 235.782,
+          "pitch": -3.587,
+          "roll": -6.198
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 126.285072,
+          "latitude": 26.242563,
+          "height": 13156.03,
+          "heading": 244.437,
+          "pitch": 0.26,
+          "roll": 13.97
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0007",
+      "name": "大象人-0007",
+      "modelType": "elephant-man",
+      "targetType": "ground-unit",
+      "faction": "neutral",
+      "health": 39,
+      "maxHealth": 100,
+      "status": "damaged",
+      "showModel": true,
+      "speedLevel": 0.87,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 132.724168,
+          "latitude": 45.26351,
+          "height": 80.3,
+          "heading": 257.88,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 132.721284,
+          "latitude": 45.262902,
+          "height": 80.3,
+          "heading": 264.598,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 132.717906,
+          "latitude": 45.262022,
+          "height": 80.3,
+          "heading": 249.057,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 132.715069,
+          "latitude": 45.261439,
+          "height": 80.3,
+          "heading": 257.88,
+          "pitch": 0,
+          "roll": 0
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0008",
+      "name": "大象人-0008",
+      "modelType": "elephant-man",
+      "targetType": "ground-unit",
+      "faction": "neutral",
+      "health": 67,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.84,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 79.075692,
+          "latitude": 36.750635,
+          "height": 47.5,
+          "heading": 271.322,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 79.070861,
+          "latitude": 36.750759,
+          "height": 47.5,
+          "heading": 277.857,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 79.06554,
+          "latitude": 36.750613,
+          "height": 47.5,
+          "heading": 262.333,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 79.060763,
+          "latitude": 36.750766,
+          "height": 47.5,
+          "heading": 271.322,
+          "pitch": 0,
+          "roll": 0
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0009",
+      "name": "大象人-0009",
+      "modelType": "elephant-man",
+      "targetType": "ground-unit",
+      "faction": "neutral",
+      "health": 95,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.81,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 84.427217,
+          "latitude": 28.23776,
+          "height": 144.71,
+          "heading": 284.764,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 84.423433,
+          "latitude": 28.238804,
+          "height": 144.71,
+          "heading": 291.115,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 84.419162,
+          "latitude": 28.239581,
+          "height": 144.71,
+          "heading": 275.611,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 84.41544,
+          "latitude": 28.240659,
+          "height": 144.71,
+          "heading": 284.764,
+          "pitch": 0,
+          "roll": 0
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0010",
+      "name": "J-20-0010",
+      "modelType": "j20",
+      "targetType": "fighter",
+      "faction": "neutral",
+      "health": 58,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": false,
+      "speedLevel": 0.78,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 89.781637,
+          "latitude": 46.726477,
+          "height": 13116.44,
+          "heading": 298.206,
+          "pitch": 0.467,
+          "roll": 13.904
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 89.522139,
+          "latitude": 46.877792,
+          "height": 13561.69,
+          "heading": 304.372,
+          "pitch": 3.207,
+          "roll": -8.367
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 89.20251,
+          "latitude": 46.996035,
+          "height": 12443.55,
+          "heading": 288.89,
+          "pitch": -3.674,
+          "roll": -5.537
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 88.951767,
+          "latitude": 47.152165,
+          "height": 13116.44,
+          "heading": 298.206,
+          "pitch": 0.467,
+          "roll": 13.904
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0011",
+      "name": "J-20-0011",
+      "modelType": "j20",
+      "targetType": "fighter",
+      "faction": "neutral",
+      "health": 86,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.75,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 95.133482,
+          "latitude": 38.213777,
+          "height": 11106.51,
+          "heading": 311.648,
+          "pitch": 0.519,
+          "roll": 13.882
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 94.77168,
+          "latitude": 38.545894,
+          "height": 11538.28,
+          "heading": 317.627,
+          "pitch": 3.176,
+          "roll": -8.513
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 94.350336,
+          "latitude": 38.845262,
+          "height": 10421.95,
+          "heading": 302.17,
+          "pitch": -3.694,
+          "roll": -5.369
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 93.998258,
+          "latitude": 39.182726,
+          "height": 11106.51,
+          "heading": 311.648,
+          "pitch": 0.519,
+          "roll": 13.882
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0012",
+      "name": "J-20-0012",
+      "modelType": "j20",
+      "targetType": "fighter",
+      "faction": "neutral",
+      "health": 49,
+      "maxHealth": 100,
+      "status": "damaged",
+      "showModel": true,
+      "speedLevel": 0.72,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 100.485326,
+          "latitude": 29.701078,
+          "height": 9096.57,
+          "heading": 325.09,
+          "pitch": 0.57,
+          "roll": 13.857
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 100.262782,
+          "latitude": 30.036062,
+          "height": 9514.79,
+          "heading": 330.881,
+          "pitch": 3.144,
+          "roll": -8.656
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 99.981294,
+          "latitude": 30.338626,
+          "height": 8400.45,
+          "heading": 315.452,
+          "pitch": -3.714,
+          "roll": -5.201
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 99.769439,
+          "latitude": 30.679488,
+          "height": 9096.57,
+          "heading": 325.09,
+          "pitch": 0.57,
+          "roll": 13.857
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0013",
+      "name": "消防车-0013",
+      "modelType": "fire-engine",
+      "targetType": "ground-vehicle",
+      "faction": "neutral",
+      "health": 77,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.69,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 105.833316,
+          "latitude": 21.186259,
+          "height": 143.52,
+          "heading": 338.532,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 105.827403,
+          "latitude": 21.200643,
+          "height": 143.52,
+          "heading": 344.134,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 105.821024,
+          "latitude": 21.21477,
+          "height": 143.52,
+          "heading": 328.735,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 105.815205,
+          "latitude": 21.229205,
+          "height": 143.52,
+          "heading": 338.532,
+          "pitch": 0,
+          "roll": 0
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0014",
+      "name": "大象人-0014",
+      "modelType": "elephant-man",
+      "targetType": "ground-unit",
+      "faction": "neutral",
+      "health": 40,
+      "maxHealth": 100,
+      "status": "damaged",
+      "showModel": true,
+      "speedLevel": 0.66,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 111.184841,
+          "latitude": 39.673384,
+          "height": 110.72,
+          "heading": 351.973,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 111.184137,
+          "latitude": 39.678354,
+          "height": 110.72,
+          "heading": 357.386,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 111.182971,
+          "latitude": 39.683071,
+          "height": 110.72,
+          "heading": 342.019,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 111.182368,
+          "latitude": 39.688097,
+          "height": 110.72,
+          "heading": 351.973,
+          "pitch": 0,
+          "roll": 0
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0015",
+      "name": "V-22 Osprey-0015",
+      "modelType": "v22",
+      "targetType": "tiltrotor",
+      "faction": "neutral",
+      "health": 68,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": false,
+      "speedLevel": 0.98,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 116.540854,
+          "latitude": 31.162977,
+          "height": 2907.83,
+          "heading": 5.414,
+          "pitch": 0.724,
+          "roll": 13.769
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 116.567583,
+          "latitude": 31.355693,
+          "height": 3284.98,
+          "heading": 10.636,
+          "pitch": 3.045,
+          "roll": -9.079
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 116.53722,
+          "latitude": 31.517009,
+          "height": 2177.74,
+          "heading": -4.695,
+          "pitch": -3.769,
+          "roll": -4.69
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 116.577523,
+          "latitude": 31.717192,
+          "height": 2907.83,
+          "heading": 5.414,
+          "pitch": 0.724,
+          "roll": 13.769
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0016",
+      "name": "消防车-0016",
+      "modelType": "fire-engine",
+      "targetType": "ground-vehicle",
+      "faction": "neutral",
+      "health": 96,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.95,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 121.88789,
+          "latitude": 22.647633,
+          "height": 45.12,
+          "heading": 18.855,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 121.892571,
+          "latitude": 22.662535,
+          "height": 45.12,
+          "heading": 23.886,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 121.8968,
+          "latitude": 22.677189,
+          "height": 45.12,
+          "heading": 8.593,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 121.901596,
+          "latitude": 22.692155,
+          "height": 45.12,
+          "heading": 18.855,
+          "pitch": 0,
+          "roll": 0
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0017",
+      "name": "大象人-0017",
+      "modelType": "elephant-man",
+      "targetType": "ground-unit",
+      "faction": "neutral",
+      "health": 59,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.92,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 127.239415,
+          "latitude": 41.134758,
+          "height": 142.33,
+          "heading": 32.296,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 127.242041,
+          "latitude": 41.139103,
+          "height": 142.33,
+          "heading": 37.134,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 127.244221,
+          "latitude": 41.143204,
+          "height": 142.33,
+          "heading": 21.882,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 127.246971,
+          "latitude": 41.147617,
+          "height": 142.33,
+          "heading": 32.296,
+          "pitch": 0,
+          "roll": 0
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0018",
+      "name": "J-20-0018",
+      "modelType": "j20",
+      "targetType": "fighter",
+      "faction": "neutral",
+      "health": 87,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.9,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 132.596376,
+          "latitude": 32.624873,
+          "height": 13036.54,
+          "heading": 45.736,
+          "pitch": 0.877,
+          "roll": 13.66
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 132.888564,
+          "latitude": 32.923581,
+          "height": 13372.04,
+          "heading": 50.381,
+          "pitch": 2.941,
+          "roll": -9.487
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 133.1256,
+          "latitude": 33.191956,
+          "height": 12273.59,
+          "heading": 35.172,
+          "pitch": -3.818,
+          "roll": -4.172
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 133.434229,
+          "latitude": 33.499707,
+          "height": 13036.54,
+          "heading": 45.736,
+          "pitch": 0.877,
+          "roll": 13.66
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0019",
+      "name": "消防车-0019",
+      "modelType": "fire-engine",
+      "targetType": "ground-vehicle",
+      "faction": "neutral",
+      "health": 50,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.87,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 78.942464,
+          "latitude": 24.109007,
+          "height": 76.73,
+          "heading": 59.176,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 78.955592,
+          "latitude": 24.117494,
+          "height": 76.73,
+          "heading": 63.627,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 78.968284,
+          "latitude": 24.125741,
+          "height": 76.73,
+          "heading": 48.464,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 78.981551,
+          "latitude": 24.134304,
+          "height": 76.73,
+          "heading": 59.176,
+          "pitch": 0,
+          "roll": 0
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0020",
+      "name": "J-20-0020",
+      "modelType": "j20",
+      "targetType": "fighter",
+      "faction": "neutral",
+      "health": 78,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": false,
+      "speedLevel": 0.84,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 84.300052,
+          "latitude": 42.599467,
+          "height": 9016.35,
+          "heading": 72.615,
+          "pitch": 0.978,
+          "roll": 13.575
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 84.780122,
+          "latitude": 42.772569,
+          "height": 9323.8,
+          "heading": 76.872,
+          "pitch": 2.87,
+          "roll": -9.752
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 85.20638,
+          "latitude": 42.916074,
+          "height": 8232.14,
+          "heading": 61.757,
+          "pitch": -3.848,
+          "roll": -3.823
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 85.704788,
+          "latitude": 43.099261,
+          "height": 9016.35,
+          "heading": 72.615,
+          "pitch": 0.978,
+          "roll": 13.575
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0021",
+      "name": "消防车-0021",
+      "modelType": "fire-engine",
+      "targetType": "ground-vehicle",
+      "faction": "neutral",
+      "health": 41,
+      "maxHealth": 100,
+      "status": "damaged",
+      "showModel": true,
+      "speedLevel": 0.81,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 89.645514,
+          "latitude": 34.083257,
+          "height": 141.14,
+          "heading": 86.054,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 89.665664,
+          "latitude": 34.085507,
+          "height": 141.14,
+          "heading": 90.116,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 89.685389,
+          "latitude": 34.087523,
+          "height": 141.14,
+          "heading": 75.052,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 89.705694,
+          "latitude": 34.089857,
+          "height": 141.14,
+          "heading": 86.054,
+          "pitch": 0,
+          "roll": 0
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0022",
+      "name": "V-22 Osprey-0022",
+      "modelType": "v22",
+      "targetType": "tiltrotor",
+      "faction": "neutral",
+      "health": 69,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.78,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 95.003725,
+          "latitude": 25.574059,
+          "height": 3784.36,
+          "heading": 99.493,
+          "pitch": 1.078,
+          "roll": 13.482
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 95.155567,
+          "latitude": 25.562473,
+          "height": 4063.54,
+          "heading": 103.359,
+          "pitch": 2.797,
+          "roll": -10.01
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 95.254974,
+          "latitude": 25.522047,
+          "height": 2979.4,
+          "heading": 88.348,
+          "pitch": -3.875,
+          "roll": -3.472
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 95.427038,
+          "latitude": 25.521583,
+          "height": 3784.36,
+          "heading": 99.493,
+          "pitch": 1.078,
+          "roll": 13.482
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0023",
+      "name": "V-22 Osprey-0023",
+      "modelType": "v22",
+      "targetType": "tiltrotor",
+      "faction": "neutral",
+      "health": 97,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.75,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 100.355559,
+          "latitude": 44.061354,
+          "height": 2909.47,
+          "heading": 112.932,
+          "pitch": 1.128,
+          "roll": 13.431
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 100.579194,
+          "latitude": 43.987613,
+          "height": 3174.45,
+          "heading": 116.601,
+          "pitch": 2.759,
+          "roll": -10.136
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 100.751094,
+          "latitude": 43.885418,
+          "height": 2094.35,
+          "heading": 101.645,
+          "pitch": -3.888,
+          "roll": -3.295
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 100.995888,
+          "latitude": 43.823314,
+          "height": 2909.47,
+          "heading": 112.932,
+          "pitch": 1.128,
+          "roll": 13.431
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0024",
+      "name": "J-20-0024",
+      "modelType": "j20",
+      "targetType": "fighter",
+      "faction": "neutral",
+      "health": 60,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.72,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 105.707393,
+          "latitude": 35.548649,
+          "height": 8975.64,
+          "heading": 126.369,
+          "pitch": 1.178,
+          "roll": 13.379
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 106.05261,
+          "latitude": 35.329998,
+          "height": 9226.38,
+          "heading": 129.841,
+          "pitch": 2.721,
+          "roll": -10.261
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 106.346803,
+          "latitude": 35.083284,
+          "height": 8150.5,
+          "heading": 114.944,
+          "pitch": -3.9,
+          "roll": -3.118
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 106.714112,
+          "latitude": 34.876784,
+          "height": 8975.64,
+          "heading": 126.369,
+          "pitch": 1.178,
+          "roll": 13.379
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0025",
+      "name": "J-20-0025",
+      "modelType": "j20",
+      "targetType": "fighter",
+      "faction": "neutral",
+      "health": 88,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": false,
+      "speedLevel": 0.69,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 111.059225,
+          "latitude": 27.035943,
+          "height": 14965.39,
+          "heading": 139.807,
+          "pitch": 1.228,
+          "roll": 13.324
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 111.279599,
+          "latitude": 26.814023,
+          "height": 15201.84,
+          "heading": 143.081,
+          "pitch": 2.683,
+          "roll": -10.384
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 111.449668,
+          "latitude": 26.564436,
+          "height": 14130.36,
+          "heading": 128.245,
+          "pitch": -3.911,
+          "roll": -2.94
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 111.693064,
+          "latitude": 26.355179,
+          "height": 14965.39,
+          "heading": 139.807,
+          "pitch": 1.228,
+          "roll": 13.324
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0026",
+      "name": "V-22 Osprey-0026",
+      "modelType": "v22",
+      "targetType": "tiltrotor",
+      "faction": "neutral",
+      "health": 51,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.66,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 116.411056,
+          "latitude": 45.523236,
+          "height": 3784.6,
+          "heading": 153.244,
+          "pitch": 1.277,
+          "roll": 13.267
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 116.532141,
+          "latitude": 45.330064,
+          "height": 4006.73,
+          "heading": 156.319,
+          "pitch": 2.644,
+          "roll": -10.505
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 116.603649,
+          "latitude": 45.109624,
+          "height": 2939.83,
+          "heading": 141.547,
+          "pitch": -3.921,
+          "roll": -2.762
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 116.748683,
+          "latitude": 44.929624,
+          "height": 3784.6,
+          "heading": 153.244,
+          "pitch": 1.277,
+          "roll": 13.267
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0027",
+      "name": "V-22 Osprey-0027",
+      "modelType": "v22",
+      "targetType": "tiltrotor",
+      "faction": "neutral",
+      "health": 79,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.98,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 121.762885,
+          "latitude": 37.010528,
+          "height": 2909.58,
+          "heading": 166.68,
+          "pitch": 1.326,
+          "roll": 13.208
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 121.822764,
+          "latitude": 36.837522,
+          "height": 3117.34,
+          "heading": 169.557,
+          "pitch": 2.605,
+          "roll": -10.624
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 121.833802,
+          "latitude": 36.637653,
+          "height": 2055.2,
+          "heading": 154.851,
+          "pitch": -3.931,
+          "roll": -2.583
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 121.918552,
+          "latitude": 36.478326,
+          "height": 2909.58,
+          "heading": 166.68,
+          "pitch": 1.326,
+          "roll": 13.208
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0028",
+      "name": "消防车-0028",
+      "modelType": "fire-engine",
+      "targetType": "ground-vehicle",
+      "faction": "neutral",
+      "health": 42,
+      "maxHealth": 100,
+      "status": "damaged",
+      "showModel": true,
+      "speedLevel": 0.95,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 127.106186,
+          "latitude": 28.49313,
+          "height": 41.55,
+          "heading": 180.116,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 127.10705,
+          "latitude": 28.477689,
+          "height": 41.55,
+          "heading": 182.794,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 127.10753,
+          "latitude": 28.462037,
+          "height": 41.55,
+          "heading": 168.156,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 127.108601,
+          "latitude": 28.44671,
+          "height": 41.55,
+          "heading": 180.116,
+          "pitch": 0,
+          "roll": 0
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0029",
+      "name": "V-22 Osprey-0029",
+      "modelType": "v22",
+      "targetType": "tiltrotor",
+      "faction": "neutral",
+      "health": 70,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.92,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 132.46654,
+          "latitude": 46.985111,
+          "height": 4659.43,
+          "heading": 193.552,
+          "pitch": 1.424,
+          "roll": 13.083
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 132.432546,
+          "latitude": 46.765037,
+          "height": 4838.35,
+          "heading": 196.029,
+          "pitch": 2.525,
+          "roll": -10.858
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 132.351207,
+          "latitude": 46.518923,
+          "height": 3786.28,
+          "heading": 181.462,
+          "pitch": -3.949,
+          "roll": -2.225
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 132.343914,
+          "latitude": 46.313534,
+          "height": 4659.43,
+          "heading": 193.552,
+          "pitch": 1.424,
+          "roll": 13.083
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0030",
+      "name": "消防车-0030",
+      "modelType": "fire-engine",
+      "targetType": "ground-vehicle",
+      "faction": "neutral",
+      "health": 98,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": false,
+      "speedLevel": 0.89,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 78.809235,
+          "latitude": 38.467379,
+          "height": 105.96,
+          "heading": 206.987,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 78.801193,
+          "latitude": 38.448948,
+          "height": 105.96,
+          "heading": 209.264,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 78.792778,
+          "latitude": 38.430312,
+          "height": 105.96,
+          "heading": 194.77,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 78.784956,
+          "latitude": 38.412002,
+          "height": 105.96,
+          "heading": 206.987,
+          "pitch": 0,
+          "roll": 0
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0031",
+      "name": "J-20-0031",
+      "modelType": "j20",
+      "targetType": "fighter",
+      "faction": "neutral",
+      "health": 61,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.86,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 84.170188,
+          "latitude": 29.95969,
+          "height": 10903.11,
+          "heading": 220.421,
+          "pitch": 1.521,
+          "roll": 12.949
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 83.989566,
+          "latitude": 29.715511,
+          "height": 11053.07,
+          "heading": 222.498,
+          "pitch": 2.444,
+          "roll": -11.084
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 83.763127,
+          "latitude": 29.446133,
+          "height": 10011.78,
+          "heading": 208.08,
+          "pitch": -3.964,
+          "roll": -1.865
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 83.611019,
+          "latitude": 29.217637,
+          "height": 10903.11,
+          "heading": 220.421,
+          "pitch": 1.521,
+          "roll": 12.949
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0032",
+      "name": "V-22 Osprey-0032",
+      "modelType": "v22",
+      "targetType": "tiltrotor",
+      "faction": "neutral",
+      "health": 89,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.83,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 89.52201,
+          "latitude": 21.446978,
+          "height": 2033.9,
+          "heading": 233.855,
+          "pitch": 1.569,
+          "roll": 12.878
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 89.35213,
+          "latitude": 21.304612,
+          "height": 2169.34,
+          "heading": 235.731,
+          "pitch": 2.402,
+          "roll": -11.194
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 89.137208,
+          "latitude": 21.137474,
+          "height": 1133.7,
+          "heading": 221.391,
+          "pitch": -3.971,
+          "roll": -1.684
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 88.996741,
+          "latitude": 21.011286,
+          "height": 2033.9,
+          "heading": 233.855,
+          "pitch": 1.569,
+          "roll": 12.878
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0033",
+      "name": "大象人-0033",
+      "modelType": "elephant-man",
+      "targetType": "ground-unit",
+      "faction": "neutral",
+      "health": 52,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.81,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 94.863809,
+          "latitude": 39.928753,
+          "height": 137.56,
+          "heading": 247.288,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 94.860235,
+          "latitude": 39.926985,
+          "height": 137.56,
+          "heading": 248.962,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 94.856308,
+          "latitude": 39.925023,
+          "height": 137.56,
+          "heading": 234.703,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 94.852976,
+          "latitude": 39.923388,
+          "height": 137.56,
+          "heading": 247.288,
+          "pitch": 0,
+          "roll": 0
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0034",
+      "name": "大象人-0034",
+      "modelType": "elephant-man",
+      "targetType": "ground-unit",
+      "faction": "neutral",
+      "health": 80,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.78,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 100.215333,
+          "latitude": 31.415878,
+          "height": 104.77,
+          "heading": 260.721,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 100.21235,
+          "latitude": 31.415198,
+          "height": 104.77,
+          "heading": 262.193,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 100.209019,
+          "latitude": 31.414328,
+          "height": 104.77,
+          "heading": 248.018,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 100.206286,
+          "latitude": 31.413785,
+          "height": 104.77,
+          "heading": 260.721,
+          "pitch": 0,
+          "roll": 0
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0035",
+      "name": "V-22 Osprey-0035",
+      "modelType": "v22",
+      "targetType": "tiltrotor",
+      "faction": "neutral",
+      "health": 43,
+      "maxHealth": 100,
+      "status": "damaged",
+      "showModel": false,
+      "speedLevel": 0.75,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 105.577466,
+          "latitude": 22.908837,
+          "height": 2907.98,
+          "heading": 274.153,
+          "pitch": 1.711,
+          "roll": 12.655
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 105.353593,
+          "latitude": 22.911982,
+          "height": 2999.75,
+          "heading": 275.424,
+          "pitch": 2.276,
+          "roll": -11.513
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 105.087051,
+          "latitude": 22.891658,
+          "height": 1982.11,
+          "heading": 261.333,
+          "pitch": -3.987,
+          "roll": -1.141
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 104.895259,
+          "latitude": 22.912447,
+          "height": 2907.98,
+          "heading": 274.153,
+          "pitch": 1.711,
+          "roll": 12.655
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0036",
+      "name": "V-22 Osprey-0036",
+      "modelType": "v22",
+      "targetType": "tiltrotor",
+      "faction": "neutral",
+      "health": 71,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.72,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 110.929281,
+          "latitude": 41.396121,
+          "height": 2032.58,
+          "heading": 287.584,
+          "pitch": 1.758,
+          "roll": 12.576
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 110.752845,
+          "latitude": 41.441253,
+          "height": 2109.75,
+          "heading": 288.653,
+          "pitch": 2.233,
+          "roll": -11.616
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 110.534545,
+          "latitude": 41.463359,
+          "height": 1098.46,
+          "heading": 274.65,
+          "pitch": -3.991,
+          "roll": -0.96
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 110.391069,
+          "latitude": 41.526618,
+          "height": 2032.58,
+          "heading": 287.584,
+          "pitch": 1.758,
+          "roll": 12.576
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0037",
+      "name": "消防车-0037",
+      "modelType": "fire-engine",
+      "targetType": "ground-vehicle",
+      "faction": "neutral",
+      "health": 99,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.69,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 116.269907,
+          "latitude": 32.877252,
+          "height": 136.37,
+          "heading": 301.015,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 116.256137,
+          "latitude": 32.884274,
+          "height": 136.37,
+          "heading": 301.881,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 116.24204,
+          "latitude": 32.891116,
+          "height": 136.37,
+          "heading": 287.969,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 116.228541,
+          "latitude": 32.898288,
+          "height": 136.37,
+          "heading": 301.015,
+          "pitch": 0,
+          "roll": 0
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0038",
+      "name": "V-22 Osprey-0038",
+      "modelType": "v22",
+      "targetType": "tiltrotor",
+      "faction": "neutral",
+      "health": 62,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.66,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 121.632905,
+          "latitude": 24.370687,
+          "height": 3781.64,
+          "heading": 314.445,
+          "pitch": 1.851,
+          "roll": 12.411
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 121.461324,
+          "latitude": 24.518677,
+          "height": 3829.59,
+          "heading": 315.109,
+          "pitch": 2.146,
+          "roll": -11.815
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 121.249511,
+          "latitude": 24.64454,
+          "height": 2831.5,
+          "heading": 301.289,
+          "pitch": -3.996,
+          "roll": -0.596
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 121.112629,
+          "latitude": 24.811615,
+          "height": 3781.64,
+          "heading": 314.445,
+          "pitch": 1.851,
+          "roll": 12.411
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0039",
+      "name": "消防车-0039",
+      "modelType": "fire-engine",
+      "targetType": "ground-vehicle",
+      "faction": "neutral",
+      "health": 90,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.98,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 126.972956,
+          "latitude": 42.851501,
+          "height": 70.78,
+          "heading": 327.874,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 126.961022,
+          "latitude": 42.867711,
+          "height": 70.78,
+          "heading": 328.335,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 126.948774,
+          "latitude": 42.883747,
+          "height": 70.78,
+          "heading": 314.611,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 126.937125,
+          "latitude": 42.900113,
+          "height": 70.78,
+          "heading": 327.874,
+          "pitch": 0,
+          "roll": 0
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0040",
+      "name": "V-22 Osprey-0040",
+      "modelType": "v22",
+      "targetType": "tiltrotor",
+      "faction": "neutral",
+      "health": 53,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": false,
+      "speedLevel": 0.95,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 132.336522,
+          "latitude": 34.345249,
+          "height": 2030.5,
+          "heading": 341.303,
+          "pitch": 1.942,
+          "roll": 12.239
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 132.281712,
+          "latitude": 34.476034,
+          "height": 2049.18,
+          "heading": 341.561,
+          "pitch": 2.057,
+          "roll": -12.006
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 132.18833,
+          "latitude": 34.585604,
+          "height": 1064.98,
+          "heading": 327.934,
+          "pitch": -3.999,
+          "roll": -0.232
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 132.169937,
+          "latitude": 34.736419,
+          "height": 2030.5,
+          "heading": 341.303,
+          "pitch": 1.942,
+          "roll": 12.239
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0041",
+      "name": "大象人-0041",
+      "modelType": "elephant-man",
+      "targetType": "ground-unit",
+      "faction": "neutral",
+      "health": 81,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.92,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 78.676004,
+          "latitude": 25.82575,
+          "height": 135.18,
+          "heading": 354.73,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 78.675167,
+          "latitude": 25.830638,
+          "height": 135.18,
+          "heading": 354.787,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 78.674027,
+          "latitude": 25.835359,
+          "height": 135.18,
+          "heading": 341.259,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 78.673488,
+          "latitude": 25.84041,
+          "height": 135.18,
+          "heading": 354.73,
+          "pitch": 0,
+          "roll": 0
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0042",
+      "name": "V-22 Osprey-0042",
+      "modelType": "v22",
+      "targetType": "tiltrotor",
+      "faction": "neutral",
+      "health": 44,
+      "maxHealth": 100,
+      "status": "damaged",
+      "showModel": true,
+      "speedLevel": 0.89,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 84.04013,
+          "latitude": 44.319806,
+          "height": 3779.14,
+          "heading": 8.158,
+          "pitch": 2.032,
+          "roll": 12.058
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 84.051255,
+          "latitude": 44.503669,
+          "height": 3768.56,
+          "heading": 8.011,
+          "pitch": 1.967,
+          "roll": -12.19
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 84.025491,
+          "latitude": 44.667243,
+          "height": 2798.89,
+          "heading": -5.415,
+          "pitch": -4,
+          "roll": 0.132
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 84.074725,
+          "latitude": 44.872066,
+          "height": 3779.14,
+          "heading": 8.158,
+          "pitch": 2.032,
+          "roll": 12.058
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0043",
+      "name": "J-20-0043",
+      "modelType": "j20",
+      "targetType": "fighter",
+      "faction": "neutral",
+      "health": 72,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.86,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 89.391931,
+          "latitude": 35.807082,
+          "height": 10773.76,
+          "heading": 21.584,
+          "pitch": 2.077,
+          "roll": 11.965
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 89.480854,
+          "latitude": 36.102228,
+          "height": 10748.54,
+          "heading": 21.235,
+          "pitch": 1.922,
+          "roll": -12.278
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 89.533741,
+          "latitude": 36.377555,
+          "height": 9786.39,
+          "heading": 7.913,
+          "pitch": -3.999,
+          "roll": 0.314
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 89.661609,
+          "latitude": 36.694121,
+          "height": 10773.76,
+          "heading": 21.584,
+          "pitch": 2.077,
+          "roll": 11.965
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0044",
+      "name": "大象人-0044",
+      "modelType": "elephant-man",
+      "targetType": "ground-unit",
+      "faction": "neutral",
+      "health": 35,
+      "maxHealth": 100,
+      "status": "damaged",
+      "showModel": true,
+      "speedLevel": 0.83,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 94.730578,
+          "latitude": 27.287124,
+          "height": 36.79,
+          "heading": 35.009,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 94.733061,
+          "latitude": 27.291399,
+          "height": 36.79,
+          "heading": 34.458,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 94.735263,
+          "latitude": 27.29552,
+          "height": 36.79,
+          "heading": 21.242,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 94.738065,
+          "latitude": 27.299971,
+          "height": 36.79,
+          "heading": 35.009,
+          "pitch": 0,
+          "roll": 0
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0045",
+      "name": "J-20-0045",
+      "modelType": "j20",
+      "targetType": "fighter",
+      "faction": "neutral",
+      "health": 63,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": false,
+      "speedLevel": 0.8,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 100.095526,
+          "latitude": 45.781632,
+          "height": 14751.46,
+          "heading": 48.434,
+          "pitch": 2.165,
+          "roll": 11.771
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 100.370647,
+          "latitude": 46.071971,
+          "height": 14696.99,
+          "heading": 47.68,
+          "pitch": 1.83,
+          "roll": -12.449
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 100.611455,
+          "latitude": 46.343437,
+          "height": 13750.36,
+          "heading": 34.573,
+          "pitch": -3.995,
+          "roll": 0.677
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 100.927174,
+          "latitude": 46.656105,
+          "height": 14751.46,
+          "heading": 48.434,
+          "pitch": 2.165,
+          "roll": 11.771
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0046",
+      "name": "消防车-0046",
+      "modelType": "fire-engine",
+      "targetType": "ground-vehicle",
+      "faction": "neutral",
+      "health": 91,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.77,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 105.433626,
+          "latitude": 37.261373,
+          "height": 101.2,
+          "heading": 61.858,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 105.446541,
+          "latitude": 37.269798,
+          "height": 101.2,
+          "heading": 60.901,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 105.459188,
+          "latitude": 37.278076,
+          "height": 101.2,
+          "heading": 47.905,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 105.472433,
+          "latitude": 37.286683,
+          "height": 101.2,
+          "heading": 61.858,
+          "pitch": 0,
+          "roll": 0
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0047",
+      "name": "V-22 Osprey-0047",
+      "modelType": "v22",
+      "targetType": "tiltrotor",
+      "faction": "neutral",
+      "health": 54,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.74,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 110.799113,
+          "latitude": 28.756177,
+          "height": 2899.75,
+          "heading": 75.281,
+          "pitch": 2.252,
+          "roll": 11.57
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 111.009584,
+          "latitude": 28.831281,
+          "height": 2816.06,
+          "heading": 74.122,
+          "pitch": 1.737,
+          "roll": -12.611
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 111.187487,
+          "latitude": 28.888473,
+          "height": 1885.6,
+          "heading": 61.239,
+          "pitch": -3.989,
+          "roll": 1.041
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 111.440182,
+          "latitude": 28.9868,
+          "height": 2899.75,
+          "heading": 75.281,
+          "pitch": 2.252,
+          "roll": 11.57
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0048",
+      "name": "消防车-0048",
+      "modelType": "fire-engine",
+      "targetType": "ground-vehicle",
+      "faction": "neutral",
+      "health": 82,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.72,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 116.136675,
+          "latitude": 20.235622,
+          "height": 35.6,
+          "heading": 88.703,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 116.156622,
+          "latitude": 20.237868,
+          "height": 35.6,
+          "heading": 87.342,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 116.176315,
+          "latitude": 20.239974,
+          "height": 35.6,
+          "heading": 74.574,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 116.196606,
+          "latitude": 20.242408,
+          "height": 35.6,
+          "heading": 88.703,
+          "pitch": 0,
+          "roll": 0
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0049",
+      "name": "V-22 Osprey-0049",
+      "modelType": "v22",
+      "targetType": "tiltrotor",
+      "faction": "neutral",
+      "health": 45,
+      "maxHealth": 100,
+      "status": "damaged",
+      "showModel": true,
+      "speedLevel": 0.69,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 121.502689,
+          "latitude": 38.730716,
+          "height": 4647.56,
+          "heading": 102.124,
+          "pitch": 2.337,
+          "roll": 11.362
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 121.638824,
+          "latitude": 38.711415,
+          "height": 4534.72,
+          "heading": 100.562,
+          "pitch": 1.643,
+          "roll": -12.765
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 121.744159,
+          "latitude": 38.675174,
+          "height": 3621.05,
+          "heading": 87.911,
+          "pitch": -3.98,
+          "roll": 1.403
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 121.924115,
+          "latitude": 38.679974,
+          "height": 4647.56,
+          "heading": 102.124,
+          "pitch": 2.337,
+          "roll": 11.362
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0050",
+      "name": "V-22 Osprey-0050",
+      "modelType": "v22",
+      "targetType": "tiltrotor",
+      "faction": "neutral",
+      "health": 73,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": false,
+      "speedLevel": 0.66,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 126.854474,
+          "latitude": 30.217984,
+          "height": 3771.38,
+          "heading": 115.545,
+          "pitch": 2.379,
+          "roll": 11.254
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 127.062642,
+          "latitude": 30.136931,
+          "height": 3643.98,
+          "heading": 113.781,
+          "pitch": 1.595,
+          "roll": -12.839
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 127.240901,
+          "latitude": 30.039428,
+          "height": 2738.94,
+          "heading": 101.249,
+          "pitch": -3.974,
+          "roll": 1.584
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 127.493678,
+          "latitude": 29.98291,
+          "height": 3771.38,
+          "heading": 115.545,
+          "pitch": 2.379,
+          "roll": 11.254
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0051",
+      "name": "大象人-0051",
+      "modelType": "elephant-man",
+      "targetType": "ground-unit",
+      "faction": "neutral",
+      "health": 36,
+      "maxHealth": 100,
+      "status": "damaged",
+      "showModel": true,
+      "speedLevel": 0.98,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 132.191248,
+          "latitude": 21.696996,
+          "height": 67.21,
+          "heading": 128.964,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 132.194555,
+          "latitude": 21.694752,
+          "height": 67.21,
+          "heading": 126.999,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 132.19763,
+          "latitude": 21.692381,
+          "height": 67.21,
+          "heading": 114.589,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 132.2013,
+          "latitude": 21.690337,
+          "height": 67.21,
+          "heading": 128.964,
+          "pitch": 0,
+          "roll": 0
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0052",
+      "name": "大象人-0052",
+      "modelType": "elephant-man",
+      "targetType": "ground-unit",
+      "faction": "neutral",
+      "health": 64,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.95,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 78.542772,
+          "latitude": 40.18412,
+          "height": 34.41,
+          "heading": 142.383,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 78.544834,
+          "latitude": 40.181843,
+          "height": 34.41,
+          "heading": 140.217,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 78.546671,
+          "latitude": 40.179442,
+          "height": 34.41,
+          "heading": 127.931,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 78.549103,
+          "latitude": 40.177368,
+          "height": 34.41,
+          "heading": 142.383,
+          "pitch": 0,
+          "roll": 0
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0053",
+      "name": "J-20-0053",
+      "modelType": "j20",
+      "targetType": "fighter",
+      "faction": "neutral",
+      "health": 92,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.92,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 83.909813,
+          "latitude": 31.679779,
+          "height": 14659.79,
+          "heading": 155.8,
+          "pitch": 2.503,
+          "roll": 10.921
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 84.149545,
+          "latitude": 31.246624,
+          "height": 14488.87,
+          "heading": 153.434,
+          "pitch": 1.451,
+          "roll": -13.047
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 84.362073,
+          "latitude": 30.798506,
+          "height": 13610.63,
+          "heading": 141.274,
+          "pitch": -3.954,
+          "roll": 2.125
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 84.648731,
+          "latitude": 30.391159,
+          "height": 14659.79,
+          "heading": 155.8,
+          "pitch": 2.503,
+          "roll": 10.921
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0054",
+      "name": "消防车-0054",
+      "modelType": "fire-engine",
+      "targetType": "ground-vehicle",
+      "faction": "neutral",
+      "health": 55,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.89,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 89.24582,
+          "latitude": 23.158369,
+          "height": 98.82,
+          "heading": 169.217,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 89.25147,
+          "latitude": 23.139078,
+          "height": 98.82,
+          "heading": 166.65,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 89.256909,
+          "latitude": 23.11967,
+          "height": 98.82,
+          "heading": 154.618,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 89.262941,
+          "latitude": 23.100588,
+          "height": 98.82,
+          "heading": 169.217,
+          "pitch": 0,
+          "roll": 0
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0055",
+      "name": "J-20-0055",
+      "modelType": "j20",
+      "targetType": "fighter",
+      "faction": "neutral",
+      "health": 83,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": false,
+      "speedLevel": 0.86,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 94.613359,
+          "latitude": 41.654302,
+          "height": 10636.21,
+          "heading": 182.633,
+          "pitch": 2.583,
+          "roll": 10.69
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 94.622775,
+          "latitude": 41.342181,
+          "height": 10436.42,
+          "heading": 179.866,
+          "pitch": 1.354,
+          "roll": -13.174
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 94.606813,
+          "latitude": 41.016102,
+          "height": 9576.79,
+          "heading": 167.964,
+          "pitch": -3.937,
+          "roll": 2.484
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 94.664661,
+          "latitude": 40.730619,
+          "height": 10636.21,
+          "heading": 182.633,
+          "pitch": 2.583,
+          "roll": 10.69
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0056",
+      "name": "J-20-0056",
+      "modelType": "j20",
+      "targetType": "fighter",
+      "faction": "neutral",
+      "health": 47,
+      "maxHealth": 100,
+      "status": "damaged",
+      "showModel": true,
+      "speedLevel": 0.83,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 99.965128,
+          "latitude": 33.141561,
+          "height": 8624.31,
+          "heading": 196.047,
+          "pitch": 2.622,
+          "roll": 10.571
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 99.869688,
+          "latitude": 32.649793,
+          "height": 8410.14,
+          "heading": 193.082,
+          "pitch": 1.304,
+          "roll": -13.235
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 99.74979,
+          "latitude": 32.144572,
+          "height": 7560.03,
+          "heading": 181.311,
+          "pitch": -3.927,
+          "roll": 2.663
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 99.703522,
+          "latitude": 31.679848,
+          "height": 8624.31,
+          "heading": 196.047,
+          "pitch": 2.622,
+          "roll": 10.571
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0057",
+      "name": "消防车-0057",
+      "modelType": "fire-engine",
+      "targetType": "ground-vehicle",
+      "faction": "neutral",
+      "health": 75,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.8,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 105.300392,
+          "latitude": 24.619742,
+          "height": 130.42,
+          "heading": 209.461,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 105.292324,
+          "latitude": 24.601286,
+          "height": 130.42,
+          "heading": 206.297,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 105.284068,
+          "latitude": 24.582726,
+          "height": 130.42,
+          "heading": 194.66,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 105.276399,
+          "latitude": 24.564489,
+          "height": 130.42,
+          "heading": 209.461,
+          "pitch": 0,
+          "roll": 0
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0058",
+      "name": "大象人-0058",
+      "modelType": "elephant-man",
+      "targetType": "ground-unit",
+      "faction": "neutral",
+      "health": 38,
+      "maxHealth": 100,
+      "status": "damaged",
+      "showModel": true,
+      "speedLevel": 0.77,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 110.651916,
+          "latitude": 43.106867,
+          "height": 97.62,
+          "heading": 222.874,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 110.649996,
+          "latitude": 43.104358,
+          "height": 97.62,
+          "heading": 219.512,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 110.647894,
+          "latitude": 43.101749,
+          "height": 97.62,
+          "heading": 208.011,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 110.646378,
+          "latitude": 43.099463,
+          "height": 97.62,
+          "heading": 222.874,
+          "pitch": 0,
+          "roll": 0
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0059",
+      "name": "V-22 Osprey-0059",
+      "modelType": "v22",
+      "targetType": "tiltrotor",
+      "faction": "neutral",
+      "health": 66,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.74,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 116.020418,
+          "latitude": 34.603329,
+          "height": 2882.62,
+          "heading": 236.286,
+          "pitch": 2.738,
+          "roll": 10.205
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 115.836482,
+          "latitude": 34.452491,
+          "height": 2625.52,
+          "heading": 232.726,
+          "pitch": 1.156,
+          "roll": -13.403
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 115.630871,
+          "latitude": 34.289732,
+          "height": 1804.83,
+          "heading": 221.362,
+          "pitch": -3.894,
+          "roll": 3.197
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 115.498278,
+          "latitude": 34.167133,
+          "height": 2882.62,
+          "heading": 236.286,
+          "pitch": 2.738,
+          "roll": 10.205
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0060",
+      "name": "V-22 Osprey-0060",
+      "modelType": "v22",
+      "targetType": "tiltrotor",
+      "faction": "neutral",
+      "health": 94,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": false,
+      "speedLevel": 0.71,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 121.372175,
+          "latitude": 26.090581,
+          "height": 2005.73,
+          "heading": 249.696,
+          "pitch": 2.776,
+          "roll": 10.08
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 121.197156,
+          "latitude": 26.002606,
+          "height": 1734.4,
+          "heading": 245.939,
+          "pitch": 1.106,
+          "roll": -13.454
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 121.001396,
+          "latitude": 25.903223,
+          "height": 923.81,
+          "heading": 234.716,
+          "pitch": -3.882,
+          "roll": 3.374
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 120.878425,
+          "latitude": 25.843874,
+          "height": 2005.73,
+          "heading": 249.696,
+          "pitch": 2.776,
+          "roll": 10.08
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0061",
+      "name": "V-22 Osprey-0061",
+      "modelType": "v22",
+      "targetType": "tiltrotor",
+      "faction": "neutral",
+      "health": 57,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.68,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 126.72393,
+          "latitude": 44.577833,
+          "height": 4628.77,
+          "heading": 263.106,
+          "pitch": 2.813,
+          "roll": 9.953
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 126.575511,
+          "latitude": 44.539497,
+          "height": 4343.25,
+          "heading": 259.153,
+          "pitch": 1.056,
+          "roll": -13.503
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 126.407289,
+          "latitude": 44.490271,
+          "height": 3542.88,
+          "heading": 248.071,
+          "pitch": -3.869,
+          "roll": 3.55
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 126.311616,
+          "latitude": 44.480946,
+          "height": 4628.77,
+          "heading": 263.106,
+          "pitch": 2.813,
+          "roll": 9.953
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0062",
+      "name": "V-22 Osprey-0062",
+      "modelType": "v22",
+      "targetType": "tiltrotor",
+      "faction": "neutral",
+      "health": 85,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.65,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 132.075682,
+          "latitude": 36.065082,
+          "height": 3751.72,
+          "heading": 276.514,
+          "pitch": 2.85,
+          "roll": 9.824
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 131.837446,
+          "latitude": 36.059148,
+          "height": 3452.08,
+          "heading": 272.365,
+          "pitch": 1.006,
+          "roll": -13.55
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 131.58035,
+          "latitude": 36.042841,
+          "height": 2662.07,
+          "heading": 261.427,
+          "pitch": -3.856,
+          "roll": 3.726
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 131.395549,
+          "latitude": 36.066296,
+          "height": 3751.72,
+          "heading": 276.514,
+          "pitch": 2.85,
+          "roll": 9.824
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0063",
+      "name": "消防车-0063",
+      "modelType": "fire-engine",
+      "targetType": "ground-vehicle",
+      "faction": "neutral",
+      "health": 48,
+      "maxHealth": 100,
+      "status": "damaged",
+      "showModel": true,
+      "speedLevel": 0.97,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 78.409537,
+          "latitude": 27.542489,
+          "height": 63.64,
+          "heading": 289.922,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 78.389926,
+          "latitude": 27.547095,
+          "height": 63.64,
+          "heading": 285.578,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 78.370172,
+          "latitude": 27.551622,
+          "height": 63.64,
+          "heading": 274.785,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 78.350994,
+          "latitude": 27.556466,
+          "height": 63.64,
+          "heading": 289.922,
+          "pitch": 0,
+          "roll": 0
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0064",
+      "name": "V-22 Osprey-0064",
+      "modelType": "v22",
+      "targetType": "tiltrotor",
+      "faction": "neutral",
+      "health": 76,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.95,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 83.779176,
+          "latitude": 46.039577,
+          "height": 1997.4,
+          "heading": 303.328,
+          "pitch": 2.922,
+          "roll": 9.561
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 83.640571,
+          "latitude": 46.096163,
+          "height": 1669.64,
+          "heading": 298.79,
+          "pitch": 0.905,
+          "roll": -13.637
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 83.485,
+          "latitude": 46.143418,
+          "height": 900.75,
+          "heading": 288.144,
+          "pitch": -3.827,
+          "roll": 4.076
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 83.40118,
+          "latitude": 46.230136,
+          "height": 1997.4,
+          "heading": 303.328,
+          "pitch": 2.922,
+          "roll": 9.561
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0065",
+      "name": "消防车-0065",
+      "modelType": "fire-engine",
+      "targetType": "ground-vehicle",
+      "faction": "neutral",
+      "health": 39,
+      "maxHealth": 100,
+      "status": "damaged",
+      "showModel": false,
+      "speedLevel": 0.92,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 89.112584,
+          "latitude": 37.516737,
+          "height": 128.04,
+          "heading": 316.733,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 89.093562,
+          "latitude": 37.532598,
+          "height": 128.04,
+          "heading": 312.002,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 89.074411,
+          "latitude": 37.548388,
+          "height": 128.04,
+          "heading": 301.505,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 89.055833,
+          "latitude": 37.564493,
+          "height": 128.04,
+          "heading": 316.733,
+          "pitch": 0,
+          "roll": 0
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0066",
+      "name": "大象人-0066",
+      "modelType": "elephant-man",
+      "targetType": "ground-unit",
+      "faction": "neutral",
+      "health": 67,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.89,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 94.464108,
+          "latitude": 29.003862,
+          "height": 95.24,
+          "heading": 330.138,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 94.461608,
+          "latitude": 29.007022,
+          "height": 95.24,
+          "heading": 325.213,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 94.458987,
+          "latitude": 29.010115,
+          "height": 95.24,
+          "heading": 314.867,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 94.456935,
+          "latitude": 29.013522,
+          "height": 95.24,
+          "heading": 330.138,
+          "pitch": 0,
+          "roll": 0
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0067",
+      "name": "V-22 Osprey-0067",
+      "modelType": "v22",
+      "targetType": "tiltrotor",
+      "faction": "neutral",
+      "health": 95,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.86,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 99.834394,
+          "latitude": 20.501305,
+          "height": 2865.31,
+          "heading": 343.541,
+          "pitch": 3.026,
+          "roll": 9.155
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 99.764472,
+          "latitude": 20.623045,
+          "height": 2495.81,
+          "heading": 338.424,
+          "pitch": 0.752,
+          "roll": -13.75
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 99.680444,
+          "latitude": 20.737028,
+          "height": 1759.57,
+          "heading": 328.23,
+          "pitch": -3.778,
+          "roll": 4.595
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 99.667262,
+          "latitude": 20.889975,
+          "height": 2865.31,
+          "heading": 343.541,
+          "pitch": 3.026,
+          "roll": 9.155
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0068",
+      "name": "J-20-0068",
+      "modelType": "j20",
+      "targetType": "fighter",
+      "faction": "neutral",
+      "health": 58,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.83,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 105.186127,
+          "latitude": 38.988544,
+          "height": 16475.63,
+          "heading": 356.942,
+          "pitch": 3.06,
+          "roll": 9.017
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 105.086039,
+          "latitude": 39.467319,
+          "height": 16092.34,
+          "heading": 351.635,
+          "pitch": 0.701,
+          "roll": -13.783
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 104.972805,
+          "latitude": 39.938862,
+          "height": 15367.23,
+          "heading": 341.595,
+          "pitch": -3.761,
+          "roll": 4.766
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 104.93009,
+          "latitude": 40.449192,
+          "height": 16475.63,
+          "heading": 356.942,
+          "pitch": 3.06,
+          "roll": 9.017
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0069",
+      "name": "J-20-0069",
+      "modelType": "j20",
+      "targetType": "fighter",
+      "faction": "neutral",
+      "health": 86,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.8,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 110.537857,
+          "latitude": 30.475782,
+          "height": 14462.72,
+          "heading": 10.343,
+          "pitch": 3.093,
+          "roll": 8.877
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 110.546249,
+          "latitude": 30.867601,
+          "height": 14065.7,
+          "heading": 4.846,
+          "pitch": 0.65,
+          "roll": -13.814
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 110.542455,
+          "latitude": 31.252718,
+          "height": 13351.85,
+          "heading": -5.038,
+          "pitch": -3.743,
+          "roll": 4.937
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 110.608842,
+          "latitude": 31.676435,
+          "height": 14462.72,
+          "heading": 10.343,
+          "pitch": 3.093,
+          "roll": 8.877
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0070",
+      "name": "大象人-0070",
+      "modelType": "elephant-man",
+      "targetType": "ground-unit",
+      "faction": "neutral",
+      "health": 49,
+      "maxHealth": 100,
+      "status": "damaged",
+      "showModel": false,
+      "speedLevel": 0.77,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 115.870204,
+          "latitude": 21.952359,
+          "height": 94.05,
+          "heading": 23.743,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 115.870961,
+          "latitude": 21.955235,
+          "height": 94.05,
+          "heading": 18.056,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 115.871629,
+          "latitude": 21.958061,
+          "height": 94.05,
+          "heading": 8.33,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 115.872856,
+          "latitude": 21.961195,
+          "height": 94.05,
+          "heading": 23.743,
+          "pitch": 0,
+          "roll": 0
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0071",
+      "name": "V-22 Osprey-0071",
+      "modelType": "v22",
+      "targetType": "tiltrotor",
+      "faction": "neutral",
+      "health": 77,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.74,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 121.241307,
+          "latitude": 40.450252,
+          "height": 2854.69,
+          "heading": 37.141,
+          "pitch": 3.158,
+          "roll": 8.592
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 121.338349,
+          "latitude": 40.637344,
+          "height": 2430.41,
+          "heading": 31.266,
+          "pitch": 0.547,
+          "roll": -13.868
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 121.425134,
+          "latitude": 40.818795,
+          "height": 1739.44,
+          "heading": 21.699,
+          "pitch": -3.705,
+          "roll": 5.276
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 121.581389,
+          "latitude": 41.038454,
+          "height": 2854.69,
+          "heading": 37.141,
+          "pitch": 3.158,
+          "roll": 8.592
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0072",
+      "name": "J-20-0072",
+      "modelType": "j20",
+      "targetType": "fighter",
+      "faction": "neutral",
+      "health": 40,
+      "maxHealth": 100,
+      "status": "damaged",
+      "showModel": true,
+      "speedLevel": 0.71,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 126.593027,
+          "latitude": 31.937484,
+          "height": 16423.47,
+          "heading": 50.538,
+          "pitch": 3.19,
+          "roll": 8.448
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 126.85134,
+          "latitude": 32.219583,
+          "height": 15985.67,
+          "heading": 44.476,
+          "pitch": 0.496,
+          "roll": -13.892
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 127.100363,
+          "latitude": 32.496571,
+          "height": 15306.31,
+          "heading": 35.07,
+          "pitch": -3.685,
+          "roll": 5.444
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 127.418482,
+          "latitude": 32.811564,
+          "height": 16423.47,
+          "heading": 50.538,
+          "pitch": 3.19,
+          "roll": 8.448
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0073",
+      "name": "V-22 Osprey-0073",
+      "modelType": "v22",
+      "targetType": "tiltrotor",
+      "faction": "neutral",
+      "health": 68,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.68,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 131.944743,
+          "latitude": 23.424714,
+          "height": 4598.87,
+          "heading": 63.934,
+          "pitch": 3.221,
+          "roll": 8.302
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 132.045113,
+          "latitude": 23.492538,
+          "height": 4147.62,
+          "heading": 57.686,
+          "pitch": 0.444,
+          "roll": -13.914
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 132.13716,
+          "latitude": 23.555783,
+          "height": 3479.99,
+          "heading": 48.442,
+          "pitch": -3.665,
+          "roll": 5.611
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 132.297918,
+          "latitude": 23.656821,
+          "height": 4598.87,
+          "heading": 63.934,
+          "pitch": 3.221,
+          "roll": 8.302
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0074",
+      "name": "消防车-0074",
+      "modelType": "fire-engine",
+      "targetType": "ground-vehicle",
+      "faction": "neutral",
+      "health": 96,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.65,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 78.276298,
+          "latitude": 41.900856,
+          "height": 92.86,
+          "heading": 77.328,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 78.299366,
+          "latitude": 41.909219,
+          "height": 92.86,
+          "heading": 70.895,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 78.322375,
+          "latitude": 41.91755,
+          "height": 92.86,
+          "heading": 61.815,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 78.345931,
+          "latitude": 41.926182,
+          "height": 92.86,
+          "heading": 77.328,
+          "pitch": 0,
+          "roll": 0
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0075",
+      "name": "J-20-0075",
+      "modelType": "j20",
+      "targetType": "fighter",
+      "faction": "neutral",
+      "health": 59,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": false,
+      "speedLevel": 0.97,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 83.648166,
+          "latitude": 33.399169,
+          "height": 10383.43,
+          "heading": 90.722,
+          "pitch": 3.281,
+          "roll": 8.006
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 84.027661,
+          "latitude": 33.435526,
+          "height": 9905.52,
+          "heading": 84.105,
+          "pitch": 0.34,
+          "roll": -13.949
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 84.400773,
+          "latitude": 33.468372,
+          "height": 9261.68,
+          "heading": 75.19,
+          "pitch": -3.622,
+          "roll": 5.943
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 84.841793,
+          "latitude": 33.538567,
+          "height": 10383.43,
+          "heading": 90.722,
+          "pitch": 3.281,
+          "roll": 8.006
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0076",
+      "name": "大象人-0076",
+      "modelType": "elephant-man",
+      "targetType": "ground-unit",
+      "faction": "neutral",
+      "health": 87,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.94,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 88.979346,
+          "latitude": 24.875104,
+          "height": 157.27,
+          "heading": 104.114,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 88.982246,
+          "latitude": 24.874664,
+          "height": 157.27,
+          "heading": 97.314,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 88.985102,
+          "latitude": 24.874201,
+          "height": 157.27,
+          "heading": 88.566,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 88.988499,
+          "latitude": 24.874034,
+          "height": 157.27,
+          "heading": 104.114,
+          "pitch": 0,
+          "roll": 0
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0077",
+      "name": "大象人-0077",
+      "modelType": "elephant-man",
+      "targetType": "ground-unit",
+      "faction": "neutral",
+      "health": 50,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.91,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 94.330869,
+          "latitude": 43.362228,
+          "height": 124.47,
+          "heading": 117.505,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 94.335355,
+          "latitude": 43.360455,
+          "height": 124.47,
+          "heading": 110.523,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 94.339804,
+          "latitude": 43.358662,
+          "height": 124.47,
+          "heading": 101.944,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 94.344791,
+          "latitude": 43.357164,
+          "height": 124.47,
+          "heading": 117.505,
+          "pitch": 0,
+          "roll": 0
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0078",
+      "name": "V-22 Osprey-0078",
+      "modelType": "v22",
+      "targetType": "tiltrotor",
+      "faction": "neutral",
+      "health": 78,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.88,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 99.703275,
+          "latitude": 34.860837,
+          "height": 3707.74,
+          "heading": 130.895,
+          "pitch": 3.368,
+          "roll": 7.552
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 99.836739,
+          "latitude": 34.749093,
+          "height": 3190.45,
+          "heading": 123.732,
+          "pitch": 0.185,
+          "roll": -13.985
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 99.966739,
+          "latitude": 34.635443,
+          "height": 2583.11,
+          "heading": 115.323,
+          "pitch": -3.553,
+          "roll": 6.433
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 100.163354,
+          "latitude": 34.558431,
+          "height": 3707.74,
+          "heading": 130.895,
+          "pitch": 3.368,
+          "roll": 7.552
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0079",
+      "name": "大象人-0079",
+      "modelType": "elephant-man",
+      "targetType": "ground-unit",
+      "faction": "neutral",
+      "health": 41,
+      "maxHealth": 100,
+      "status": "damaged",
+      "showModel": true,
+      "speedLevel": 0.86,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 105.033916,
+          "latitude": 26.336476,
+          "height": 58.88,
+          "heading": 144.283,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 105.035861,
+          "latitude": 26.334154,
+          "height": 58.88,
+          "heading": 136.941,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 105.037786,
+          "latitude": 26.331821,
+          "height": 58.88,
+          "heading": 128.703,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 105.04024,
+          "latitude": 26.329779,
+          "height": 58.88,
+          "heading": 144.283,
+          "pitch": 0,
+          "roll": 0
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0080",
+      "name": "大象人-0080",
+      "modelType": "elephant-man",
+      "targetType": "ground-unit",
+      "faction": "neutral",
+      "health": 69,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": false,
+      "speedLevel": 0.83,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 110.38544,
+          "latitude": 44.8236,
+          "height": 156.08,
+          "heading": 157.67,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 110.387743,
+          "latitude": 44.819235,
+          "height": 156.08,
+          "heading": 150.15,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 110.390035,
+          "latitude": 44.814863,
+          "height": 156.08,
+          "heading": 142.085,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 110.392851,
+          "latitude": 44.81078,
+          "height": 156.08,
+          "heading": 157.67,
+          "pitch": 0,
+          "roll": 0
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0081",
+      "name": "V-22 Osprey-0081",
+      "modelType": "v22",
+      "targetType": "tiltrotor",
+      "faction": "neutral",
+      "health": 97,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.8,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 115.758351,
+          "latitude": 36.322488,
+          "height": 4571.96,
+          "heading": 171.056,
+          "pitch": 3.45,
+          "roll": 7.087
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 115.789703,
+          "latitude": 36.135026,
+          "height": 4016.07,
+          "heading": 163.359,
+          "pitch": 0.029,
+          "roll": -14
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 115.820516,
+          "latitude": 35.947268,
+          "height": 3446.15,
+          "heading": 155.468,
+          "pitch": -3.478,
+          "roll": 6.913
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 115.916549,
+          "latitude": 35.795381,
+          "height": 4571.96,
+          "heading": 171.056,
+          "pitch": 3.45,
+          "roll": 7.087
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0082",
+      "name": "J-20-0082",
+      "modelType": "j20",
+      "targetType": "fighter",
+      "faction": "neutral",
+      "health": 60,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.77,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 121.110036,
+          "latitude": 27.809701,
+          "height": 12286.81,
+          "heading": 184.44,
+          "pitch": 3.476,
+          "roll": 6.93
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 121.106259,
+          "latitude": 27.491353,
+          "height": 11718.25,
+          "heading": 176.568,
+          "pitch": -0.023,
+          "roll": -14
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 121.102917,
+          "latitude": 27.173246,
+          "height": 11161,
+          "heading": 168.852,
+          "pitch": -3.452,
+          "roll": 7.07
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 121.164308,
+          "latitude": 26.890741,
+          "height": 12286.81,
+          "heading": 184.44,
+          "pitch": 3.476,
+          "roll": 6.93
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0083",
+      "name": "大象人-0083",
+      "modelType": "elephant-man",
+      "targetType": "ground-unit",
+      "faction": "neutral",
+      "health": 88,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.74,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 126.44001,
+          "latitude": 46.284973,
+          "height": 57.69,
+          "heading": 197.823,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 126.438979,
+          "latitude": 46.280014,
+          "height": 57.69,
+          "heading": 189.777,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 126.437959,
+          "latitude": 46.275061,
+          "height": 57.69,
+          "heading": 182.238,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 126.437453,
+          "latitude": 46.270391,
+          "height": 57.69,
+          "heading": 197.823,
+          "pitch": 0,
+          "roll": 0
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0084",
+      "name": "大象人-0084",
+      "modelType": "elephant-man",
+      "targetType": "ground-unit",
+      "faction": "neutral",
+      "health": 51,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.71,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 131.791534,
+          "latitude": 37.772097,
+          "height": 154.89,
+          "heading": 211.205,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 131.78977,
+          "latitude": 37.768321,
+          "height": 154.89,
+          "heading": 202.986,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 131.788026,
+          "latitude": 37.764556,
+          "height": 154.89,
+          "heading": 195.625,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 131.786792,
+          "latitude": 37.761071,
+          "height": 154.89,
+          "heading": 211.205,
+          "pitch": 0,
+          "roll": 0
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0085",
+      "name": "消防车-0085",
+      "modelType": "fire-engine",
+      "targetType": "ground-vehicle",
+      "faction": "neutral",
+      "health": 79,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": false,
+      "speedLevel": 0.68,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 78.143057,
+          "latitude": 29.259221,
+          "height": 122.09,
+          "heading": 224.586,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 78.133728,
+          "latitude": 29.246807,
+          "height": 122.09,
+          "heading": 216.195,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 78.124426,
+          "latitude": 29.234408,
+          "height": 122.09,
+          "heading": 209.013,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 78.11563,
+          "latitude": 29.222288,
+          "height": 122.09,
+          "heading": 224.586,
+          "pitch": 0,
+          "roll": 0
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0086",
+      "name": "V-22 Osprey-0086",
+      "modelType": "v22",
+      "targetType": "tiltrotor",
+      "faction": "neutral",
+      "health": 42,
+      "maxHealth": 100,
+      "status": "damaged",
+      "showModel": true,
+      "speedLevel": 1,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 83.516738,
+          "latitude": 20.758532,
+          "height": 3677.09,
+          "heading": 237.965,
+          "pitch": 3.574,
+          "roll": 6.288
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 83.319953,
+          "latitude": 20.599891,
+          "height": 3058.78,
+          "heading": 229.404,
+          "pitch": -0.231,
+          "roll": -13.977
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 83.127501,
+          "latitude": 20.443634,
+          "height": 2553.13,
+          "heading": 222.402,
+          "pitch": -3.343,
+          "roll": 7.689
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 82.997725,
+          "latitude": 20.321849,
+          "height": 3677.09,
+          "heading": 237.965,
+          "pitch": 3.574,
+          "roll": 6.288
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0087",
+      "name": "V-22 Osprey-0087",
+      "modelType": "v22",
+      "targetType": "tiltrotor",
+      "faction": "neutral",
+      "health": 70,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.97,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 88.868404,
+          "latitude": 39.245734,
+          "height": 2797.82,
+          "heading": 251.343,
+          "pitch": 3.597,
+          "roll": 6.125
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 88.680481,
+          "latitude": 39.149897,
+          "height": 2167.34,
+          "heading": 242.613,
+          "pitch": -0.283,
+          "roll": -13.965
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 88.497864,
+          "latitude": 39.056978,
+          "height": 1674.81,
+          "heading": 235.793,
+          "pitch": -3.314,
+          "roll": 7.84
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 88.377383,
+          "latitude": 38.998234,
+          "height": 2797.82,
+          "heading": 251.343,
+          "pitch": 3.597,
+          "roll": 6.125
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0088",
+      "name": "大象人-0088",
+      "modelType": "elephant-man",
+      "targetType": "ground-unit",
+      "faction": "neutral",
+      "health": 98,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.94,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 94.197627,
+          "latitude": 30.720593,
+          "height": 153.7,
+          "heading": 264.719,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 94.194448,
+          "latitude": 30.719772,
+          "height": 153.7,
+          "heading": 255.822,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 94.191319,
+          "latitude": 30.71898,
+          "height": 153.7,
+          "heading": 249.185,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 94.188683,
+          "latitude": 30.718458,
+          "height": 153.7,
+          "heading": 264.719,
+          "pitch": 0,
+          "roll": 0
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0089",
+      "name": "V-22 Osprey-0089",
+      "modelType": "v22",
+      "targetType": "tiltrotor",
+      "faction": "neutral",
+      "health": 61,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.91,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 99.571725,
+          "latitude": 22.220133,
+          "height": 4538.99,
+          "heading": 278.094,
+          "pitch": 3.641,
+          "roll": 5.795
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 99.320535,
+          "latitude": 22.205898,
+          "height": 3884.48,
+          "heading": 269.031,
+          "pitch": -0.387,
+          "roll": -13.934
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 99.076594,
+          "latitude": 22.195651,
+          "height": 3418.43,
+          "heading": 262.579,
+          "pitch": -3.255,
+          "roll": 8.139
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 98.893676,
+          "latitude": 22.218966,
+          "height": 4538.99,
+          "heading": 278.094,
+          "pitch": 3.641,
+          "roll": 5.795
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0090",
+      "name": "V-22 Osprey-0090",
+      "modelType": "v22",
+      "targetType": "tiltrotor",
+      "faction": "neutral",
+      "health": 89,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": false,
+      "speedLevel": 0.88,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 104.92338,
+          "latitude": 40.707329,
+          "height": 3659.43,
+          "heading": 291.468,
+          "pitch": 3.662,
+          "roll": 5.629
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 104.719398,
+          "latitude": 40.735155,
+          "height": 2993.06,
+          "heading": 282.241,
+          "pitch": -0.438,
+          "roll": -13.916
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 104.523634,
+          "latitude": 40.7675,
+          "height": 2540.38,
+          "heading": 275.973,
+          "pitch": -3.224,
+          "roll": 8.286
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 104.388322,
+          "latitude": 40.833094,
+          "height": 3659.43,
+          "heading": 291.468,
+          "pitch": 3.662,
+          "roll": 5.629
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0091",
+      "name": "大象人-0091",
+      "modelType": "elephant-man",
+      "targetType": "ground-unit",
+      "faction": "neutral",
+      "health": 52,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.85,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 110.252196,
+          "latitude": 32.181964,
+          "height": 55.3,
+          "heading": 304.84,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 110.249247,
+          "latitude": 32.183219,
+          "height": 55.3,
+          "heading": 295.451,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 110.246372,
+          "latitude": 32.184514,
+          "height": 55.3,
+          "heading": 289.369,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 110.243975,
+          "latitude": 32.186073,
+          "height": 55.3,
+          "heading": 304.84,
+          "pitch": 0,
+          "roll": 0
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0092",
+      "name": "大象人-0092",
+      "modelType": "elephant-man",
+      "targetType": "ground-unit",
+      "faction": "neutral",
+      "health": 80,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.82,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 115.60372,
+          "latitude": 23.669088,
+          "height": 152.51,
+          "heading": 318.211,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 115.599724,
+          "latitude": 23.672132,
+          "height": 152.51,
+          "heading": 308.661,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 115.59581,
+          "latitude": 23.675221,
+          "height": 152.51,
+          "heading": 302.766,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 115.592371,
+          "latitude": 23.67857,
+          "height": 152.51,
+          "heading": 318.211,
+          "pitch": 0,
+          "roll": 0
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0093",
+      "name": "V-22 Osprey-0093",
+      "modelType": "v22",
+      "targetType": "tiltrotor",
+      "faction": "neutral",
+      "health": 43,
+      "maxHealth": 100,
+      "status": "damaged",
+      "showModel": true,
+      "speedLevel": 0.79,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 120.978321,
+          "latitude": 42.168905,
+          "height": 4520.13,
+          "heading": 331.58,
+          "pitch": 3.722,
+          "roll": 5.125
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 120.84166,
+          "latitude": 42.300724,
+          "height": 3818.89,
+          "heading": 321.871,
+          "pitch": -0.593,
+          "roll": -13.845
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 120.716118,
+          "latitude": 42.438657,
+          "height": 3406.74,
+          "heading": 316.164,
+          "pitch": -3.129,
+          "roll": 8.72
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 120.64925,
+          "latitude": 42.608862,
+          "height": 4520.13,
+          "heading": 331.58,
+          "pitch": 3.722,
+          "roll": 5.125
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0094",
+      "name": "大象人-0094",
+      "modelType": "elephant-man",
+      "targetType": "ground-unit",
+      "faction": "neutral",
+      "health": 71,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.77,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 126.306766,
+          "latitude": 33.643336,
+          "height": 86.91,
+          "heading": 344.948,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 126.305327,
+          "latitude": 33.646024,
+          "height": 86.91,
+          "heading": 335.081,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 126.303985,
+          "latitude": 33.648765,
+          "height": 86.91,
+          "heading": 329.563,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 126.303108,
+          "latitude": 33.651762,
+          "height": 86.91,
+          "heading": 344.948,
+          "pitch": 0,
+          "roll": 0
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0095",
+      "name": "V-22 Osprey-0095",
+      "modelType": "v22",
+      "targetType": "tiltrotor",
+      "faction": "neutral",
+      "health": 99,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": false,
+      "speedLevel": 0.74,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 131.681595,
+          "latitude": 25.143279,
+          "height": 2760.09,
+          "heading": 358.315,
+          "pitch": 3.759,
+          "roll": 4.785
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 131.613976,
+          "latitude": 25.350298,
+          "height": 2036.18,
+          "heading": 348.291,
+          "pitch": -0.696,
+          "roll": -13.787
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 131.5594,
+          "latitude": 25.56449,
+          "height": 1651.41,
+          "heading": 342.964,
+          "pitch": -3.063,
+          "roll": 9.002
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 131.562265,
+          "latitude": 25.810276,
+          "height": 2760.09,
+          "heading": 358.315,
+          "pitch": 3.759,
+          "roll": 4.785
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0096",
+      "name": "V-22 Osprey-0096",
+      "modelType": "v22",
+      "targetType": "tiltrotor",
+      "faction": "neutral",
+      "health": 62,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.71,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 78.033227,
+          "latitude": 43.630462,
+          "height": 5379.91,
+          "heading": 11.68,
+          "pitch": 3.777,
+          "roll": 4.613
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 78.015119,
+          "latitude": 43.797689,
+          "height": 4644.86,
+          "heading": 1.502,
+          "pitch": -0.747,
+          "roll": -13.754
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 78.011013,
+          "latitude": 43.972618,
+          "height": 4273.87,
+          "heading": -3.634,
+          "pitch": -3.03,
+          "roll": 9.141
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 78.063716,
+          "latitude": 44.178792,
+          "height": 5379.91,
+          "heading": 11.68,
+          "pitch": 3.777,
+          "roll": 4.613
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0097",
+      "name": "V-22 Osprey-0097",
+      "modelType": "v22",
+      "targetType": "tiltrotor",
+      "faction": "neutral",
+      "health": 90,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.68,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 83.384854,
+          "latitude": 35.117643,
+          "height": 4499.63,
+          "heading": 25.044,
+          "pitch": 3.793,
+          "roll": 4.441
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 83.396013,
+          "latitude": 35.236335,
+          "height": 3753.56,
+          "heading": 14.713,
+          "pitch": -0.798,
+          "roll": -13.719
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 83.422132,
+          "latitude": 35.363254,
+          "height": 3396.42,
+          "heading": 9.768,
+          "pitch": -2.996,
+          "roll": 9.278
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 83.504418,
+          "latitude": 35.521065,
+          "height": 4499.63,
+          "heading": 25.044,
+          "pitch": 3.793,
+          "roll": 4.441
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0098",
+      "name": "J-20-0098",
+      "modelType": "j20",
+      "targetType": "fighter",
+      "faction": "neutral",
+      "health": 53,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 1,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 88.736477,
+          "latitude": 26.604822,
+          "height": 12048.07,
+          "heading": 38.406,
+          "pitch": 3.81,
+          "roll": 4.268
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 88.95244,
+          "latitude": 27.016143,
+          "height": 11291.09,
+          "heading": 27.925,
+          "pitch": -0.849,
+          "roll": -13.681
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 89.184316,
+          "latitude": 27.436216,
+          "height": 10947.87,
+          "heading": 23.172,
+          "pitch": -2.961,
+          "roll": 9.413
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 89.471708,
+          "latitude": 27.886824,
+          "height": 12048.07,
+          "heading": 38.406,
+          "pitch": 3.81,
+          "roll": 4.268
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0099",
+      "name": "大象人-0099",
+      "modelType": "elephant-man",
+      "targetType": "ground-unit",
+      "faction": "neutral",
+      "health": 81,
+      "maxHealth": 100,
+      "status": "active",
+      "showModel": true,
+      "speedLevel": 0.97,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 94.064381,
+          "latitude": 45.078955,
+          "height": 52.92,
+          "heading": 51.767,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 94.066875,
+          "latitude": 45.081737,
+          "height": 52.92,
+          "heading": 41.136,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 94.069505,
+          "latitude": 45.084594,
+          "height": 52.92,
+          "heading": 36.578,
+          "pitch": 0,
+          "roll": 0
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 94.072573,
+          "latitude": 45.087692,
+          "height": 52.92,
+          "heading": 51.767,
+          "pitch": 0,
+          "roll": 0
+        }
+      ]
+    },
+    {
+      "id": "TARGET-0100",
+      "name": "J-20-0100",
+      "modelType": "j20",
+      "targetType": "fighter",
+      "faction": "neutral",
+      "health": 44,
+      "maxHealth": 100,
+      "status": "damaged",
+      "showModel": false,
+      "speedLevel": 0.94,
+      "track": [
+        {
+          "time": "2026-07-30T00:00:00.000Z",
+          "longitude": 99.439712,
+          "latitude": 36.579173,
+          "height": 16016.38,
+          "heading": 65.126,
+          "pitch": 3.84,
+          "roll": 3.92
+        },
+        {
+          "time": "2026-07-30T00:00:20.000Z",
+          "longitude": 99.664772,
+          "latitude": 36.731576,
+          "height": 15238,
+          "heading": 54.349,
+          "pitch": -0.95,
+          "roll": -13.599
+        },
+        {
+          "time": "2026-07-30T00:00:40.000Z",
+          "longitude": 99.907645,
+          "latitude": 36.893775,
+          "height": 14922.77,
+          "heading": 49.984,
+          "pitch": -2.89,
+          "roll": 9.679
+        },
+        {
+          "time": "2026-07-30T00:01:00.000Z",
+          "longitude": 100.204705,
+          "latitude": 37.085777,
+          "height": 16016.38,
+          "heading": 65.126,
+          "pitch": 3.84,
+          "roll": 3.92
+        }
+      ]
+    }
+  ]
+}
