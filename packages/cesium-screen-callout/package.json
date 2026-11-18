@@ -14,10 +14,12 @@
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
+      "development": "./src/index.ts",
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js"
     },
     "./worker": {
+      "development": "./src/worker.ts",
       "types": "./dist/worker.d.ts",
       "import": "./dist/worker.js"
     }
@@ -38,7 +40,17 @@
     "vite": "^8.1.1"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "exports": {
+      ".": {
+        "types": "./dist/index.d.ts",
+        "import": "./dist/index.js"
+      },
+      "./worker": {
+        "types": "./dist/worker.d.ts",
+        "import": "./dist/worker.js"
+      }
+    }
   },
   "keywords": [
     "cesium",
