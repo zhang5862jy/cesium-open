@@ -1,0 +1,5 @@
+{
+  "name": "自定义渲染管线立方体",
+  "description": "像 Cesium DrawCommand 一样显式定义顶点/索引缓冲、RawShaderMaterial、深度与剔除状态，并以一次 draw call 绘制立方体。",
+  "visible": true
+}

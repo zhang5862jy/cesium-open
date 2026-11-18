@@ -1,0 +1,5 @@
+{
+  "name": "移动目标标牌",
+  "description": "100 个数据目标的 Worker 布局与 Cesium DrawCommand 批量标牌，支持独立标题、简详标切换、属方色字母方块与三套样式；同帧跟随相机，支持拖拽避让、场景深度遮挡及性能监控。",
+  "visible": true
+}

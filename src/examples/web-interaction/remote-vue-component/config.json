@@ -1,0 +1,5 @@
+{
+  "name": "安全渲染远程 Vue 组件",
+  "description": "以 Shadow DOM、依赖/能力契约和行为审计组成三层零信任边界，安全加载 public 中模拟的远程 .vue 文件。",
+  "visible": true
+}

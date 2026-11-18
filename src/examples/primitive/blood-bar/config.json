@@ -1,0 +1,5 @@
+{
+  "name": "批量血条",
+  "description": "用自定义 DrawCommand 与 GPU Instancing 绘制始终面向屏幕的广告牌式血条，逐实例控制位置、缩放、偏移、血量百分比与显隐高度。",
+  "visible": true
+}

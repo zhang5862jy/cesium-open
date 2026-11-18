@@ -1,0 +1,5 @@
+{
+  "name": "DrawCommand 批量圆锥",
+  "description": "直接复用 Cesium CylinderGeometry，通过单个自定义 DrawCommand 批量绘制透明圆锥、流动波纹和移动分段渐变，由 Primitive 构造参数统一设置 RenderState。",
+  "visible": true
+}

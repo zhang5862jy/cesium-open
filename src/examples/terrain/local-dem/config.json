@@ -1,0 +1,5 @@
+{
+  "name": "本地 DEM 色阶瓦片",
+  "description": "读取本地 GeoTIFF/ASC，并按 Cesium 视野动态生成带色阶和山体阴影的影像瓦片。",
+  "visible": true
+}

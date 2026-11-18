@@ -1,0 +1,5 @@
+{
+  "name": "移动目标 LOD 管理",
+  "description": "300 个持续移动的目标，只注册一次即可按距离或相机高度切换已有 Model 与 Billboard；支持超距隐藏、滞回、暂停运动和统一显隐，不使用 Entity。",
+  "visible": true
+}

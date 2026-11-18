@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <title>二维标牌管理器 OpenLayers 回归</title>
+  <style>
+    html, body { margin: 0; min-height: 100%; background: #091322; }
+    #map { width: max(720px, 100vw); height: 640px; background: #152638; }
+    #result { position: absolute; inset: 8px 8px auto auto; z-index: 10; margin: 0; padding: 12px; max-width: 75%; max-height: 85vh; overflow: auto; background: #07111eea; color: white; white-space: pre-wrap; pointer-events: none; font: 12px/1.5 monospace; }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  <pre id="result">RUNNING</pre>
+  <script type="module" src="./target-callout-2d-regression.mjs"></script>
+</body>
+</html>

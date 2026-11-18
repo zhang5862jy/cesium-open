@@ -1,0 +1,5 @@
+{
+  "name": "爆炸烟雾与火焰",
+  "description": "用 Cesium 粒子发射器叠加火焰、烟雾与火花三层粒子，模拟循环引爆的爆炸效果。",
+  "visible": false
+}

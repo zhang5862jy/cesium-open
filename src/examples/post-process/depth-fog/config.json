@@ -1,0 +1,5 @@
+{
+  "name": "动态深度雾",
+  "description": "参考 Cesium Sandcastle 深度雾示例，通过 PostProcessStage 从 depthTexture 重建眼空间距离，再叠加可调指数雾与程序化流动噪声。",
+  "visible": true
+}

@@ -1,0 +1,5 @@
+{
+  "name": "参数化环面结",
+  "description": "在顶点着色器中计算 Torus Knot 曲线、局部标架和扫掠管面。",
+  "visible": true
+}

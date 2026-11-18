@@ -1,0 +1,22 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "types": ["vite/client"],
+    "allowArbitraryExtensions": true,
+    "paths": {
+      "cesium-gauss-kruger-grid": ["./packages/cesium-gauss-kruger-grid/src/index.ts"],
+      "cesium-screen-callout": [
+        "./packages/cesium-screen-callout/src/index.ts"
+      ],
+      "opfs-timeseries-store": ["./packages/opfs-timeseries-store/src/index.ts"]
+    },
+
+    /* Linting */
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "erasableSyntaxOnly": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"]
+}

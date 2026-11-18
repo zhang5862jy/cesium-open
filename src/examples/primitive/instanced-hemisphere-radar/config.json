@@ -1,0 +1,5 @@
+{
+  "name": "动态批量半球雷达",
+  "description": "使用自定义 DrawCommand 与 GPU Instancing，在一次绘制中持续更新大量半球雷达的位置、姿态和缩放。",
+  "visible": true
+}

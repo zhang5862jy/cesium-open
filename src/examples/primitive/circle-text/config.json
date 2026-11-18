@@ -1,0 +1,5 @@
+{
+  "name": "椭圆文字图元",
+  "description": "用实例化 DrawCommand 绘制椭圆图片，并由原生 LabelCollection 提供文字纹理；Data 属性通过 Proxy.set 自动触发过期刷新。",
+  "visible": true
+}

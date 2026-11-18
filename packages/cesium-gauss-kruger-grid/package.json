@@ -1,0 +1,34 @@
+{
+  "name": "cesium-gauss-kruger-grid",
+  "version": "0.1.0",
+  "description": "CGCS2000 Gauss-Kruger projected coordinate grids for CesiumJS",
+  "type": "module",
+  "sideEffects": false,
+  "files": ["dist", "src", "docs", "skills", "tsconfig.json", "tsconfig.build.json", "README.md"],
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "vite build && tsc -p tsconfig.build.json",
+    "prepack": "pnpm build",
+    "prepublishOnly": "pnpm build"
+  },
+  "dependencies": {
+    "proj4": "^2.19.10"
+  },
+  "peerDependencies": {
+    "cesium": "~1.143.0"
+  },
+  "devDependencies": {
+    "cesium": "^1.143.0",
+    "typescript": "~6.0.2",
+    "vite": "^8.1.1"
+  },
+  "keywords": ["cesium", "cgcs2000", "gauss-kruger", "grid", "projection"]
+}

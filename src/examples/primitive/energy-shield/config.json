@@ -1,0 +1,5 @@
+{
+  "name": "六边形能量罩",
+  "description": "科技蓝球形能量罩，使用 GPU 六边形网格和连续子弹冲击涟漪。",
+  "visible": false
+}

@@ -1,0 +1,5 @@
+{
+  "name": "全息立方体",
+  "description": "完全封装 Cesium 底层渲染管线（Buffer → VertexArray → ShaderProgram → DrawCommand），用 WebGL2 自定义 GLSL 着色器绘制全息立方体，并演示 GPU Instancing 一次绘制成千上万个立方体。",
+  "visible": true
+}

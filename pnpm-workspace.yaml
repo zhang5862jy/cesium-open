@@ -1,0 +1,7 @@
+packages:
+  - .
+  - packages/*
+
+allowBuilds:
+  sharp: false
+  vue-demi: true

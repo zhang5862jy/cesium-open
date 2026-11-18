@@ -1,0 +1,5 @@
+{
+  "name": "大数据存储方案(OPFS)",
+  "description": "在 Web Worker 中使用 SQLite WASM 和 OPFS 持久化时序数据，支持批量写入、流式查询、持续压测和记录管理。",
+  "visible": true
+}

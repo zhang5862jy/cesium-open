@@ -1,0 +1,5 @@
+{
+  "name": "二维移动目标标牌 · OpenLayers",
+  "description": "OpenLayers 本地二维地图与 DOM 标牌，复用三维 TargetCalloutManager 与避让算法；支持独立标题、属方色字母方块、三套样式、简详标切换、拖拽、固定及关闭。",
+  "visible": true
+}

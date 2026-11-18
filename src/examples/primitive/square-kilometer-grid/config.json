@@ -1,0 +1,5 @@
+{
+  "name": "CGCS2000 高斯-克吕格方里网",
+  "description": "基于 cesium-gauss-kruger-grid 包，展示固定1公里与自适应间距的CGCS2000高斯-克吕格方里网。",
+  "visible": true
+}

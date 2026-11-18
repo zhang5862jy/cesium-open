@@ -1,0 +1,86 @@
+{
+  "source": "pyproj / PROJ EPSG database, always_xy=True; zone prefix removed from easting",
+  "cases": [
+    {
+      "epsg": 4498,
+      "width": 6,
+      "zone": 20,
+      "longitude": 117,
+      "latitude": 0,
+      "easting": 500000.0,
+      "northing": 0.0
+    },
+    {
+      "epsg": 4498,
+      "width": 6,
+      "zone": 20,
+      "longitude": 117,
+      "latitude": 39.907,
+      "easting": 500000.0,
+      "northing": 4419202.892495516
+    },
+    {
+      "epsg": 4498,
+      "width": 6,
+      "zone": 20,
+      "longitude": 114.01,
+      "latitude": 20,
+      "easting": 186995.63305975497,
+      "northing": 2215161.3521170556
+    },
+    {
+      "epsg": 4498,
+      "width": 6,
+      "zone": 20,
+      "longitude": 119.99,
+      "latitude": 50,
+      "easting": 714353.4769850262,
+      "northing": 5545133.354658885
+    },
+    {
+      "epsg": 4527,
+      "width": 3,
+      "zone": 39,
+      "longitude": 117,
+      "latitude": 39.907,
+      "easting": 500000.0,
+      "northing": 4419202.892495516
+    },
+    {
+      "epsg": 4527,
+      "width": 3,
+      "zone": 39,
+      "longitude": 115.51,
+      "latitude": 35,
+      "easting": 363975.33796951175,
+      "northing": 3875607.5146423588
+    },
+    {
+      "epsg": 4527,
+      "width": 3,
+      "zone": 39,
+      "longitude": 118.49,
+      "latitude": 45,
+      "easting": 617481.8052415773,
+      "northing": 4986024.66323314
+    },
+    {
+      "epsg": 4528,
+      "width": 3,
+      "zone": 40,
+      "longitude": 120,
+      "latitude": 40,
+      "easting": 500000.0,
+      "northing": 4429529.030236589
+    },
+    {
+      "epsg": 4528,
+      "width": 3,
+      "zone": 40,
+      "longitude": 118.51,
+      "latitude": 30,
+      "easting": 356227.27917376906,
+      "northing": 3321048.2479527188
+    }
+  ]
+}

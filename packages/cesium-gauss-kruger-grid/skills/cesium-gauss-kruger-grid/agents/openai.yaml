@@ -1,0 +1,4 @@
+interface:
+  display_name: "Cesium 高斯—克吕格方里网"
+  short_description: "创建、接入和维护 Cesium 高斯—克吕格方里网，核对投影与渲染"
+  default_prompt: "使用 $cesium-gauss-kruger-grid 为当前项目接入或维护方里网，并验证坐标、渲染和资源清理。"

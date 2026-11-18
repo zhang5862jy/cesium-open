@@ -1,0 +1,5 @@
+{
+  "name": "深度边缘描边",
+  "description": "通过 PostProcessStage 同时对颜色纹理与眼空间深度执行 3×3 Sobel 卷积，用可调线宽、阈值和蓝图分级突出场景轮廓。",
+  "visible": true
+}
